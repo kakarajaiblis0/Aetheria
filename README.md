@@ -1,2 +1,0 @@
-# Aetheria
-Web tentang Numerology
