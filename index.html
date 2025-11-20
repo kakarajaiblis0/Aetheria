@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aetheria: Soul Codex – Kalkulator Jalur Hidup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="blob one"></div>
+  <div class="blob two"></div>
+
+  <nav>
+    <div class="logo"><div class="dot"></div>Aetheria</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link cta">Mulai</a>
+      <a href="info.html" class="nav-link">Soul Codex (Info)</a>
+      <a href="contact.html" class="nav-link">Kontak</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="card hero" id="start">
+      <h1>Aetheria — Temukan Kode Jiwa Anda</h1>
+      <p class="lead">Selami kedalaman diri dengan Soul Codex. Masukkan nama dan tanggal lahir Anda, biarkan algoritma Aetheria membaca vibrasi numerologi Anda.</p>
+
+      <form id="form">
+        <div class="form-row">
+          <input type="text" id="name" placeholder="Nama (opsional) — mis. Arjuna" />
+          <input type="date" id="dob" />
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <button class="primary" id="calc">Check</button>
+          <small style="color:rgba(255,255,255,0.6)">Menggunakan sistem reduksi Master Numbers (11, 22, 33).</small>
+        </div>
+      </form>
+      
+      <div id="error-message" style="display:none; margin-top:10px; font-size:14px;"></div>
+
+      <div style="margin-top:18px;">
+        <p class="hint">Tip: Angka 11, 22, dan 33 membawa potensi unik; mereka dikenal sebagai Angka Utama (Master Numbers).</p>
+      </div>
+    </section>
+
+    <aside class="card result-card">
+      <div id="loading" style="display:none">
+        <div class="loading">Memecahkan Kode Jiwa Anda<span class="dots"> <span>.</span><span>.</span><span>.</span></span></div>
+      </div>
+
+      <div>
+        <div id="result-title" class="result-title typewriter">Selamat Datang di Aetheria</div>
+        <div id="result-body" class="result-body typewriter" style="margin-top:10px">Masukkan tanggal lahir Anda untuk mengungkap peta jalan hidup yang telah ditakdirkan.</div>
+      </div>
+
+      <div style="margin-top:12px">
+        <a id="moreDetailsBtn" href="#" style="display:none; text-decoration:none;">
+            <button class="primary" style="padding:10px 12px; border-radius:10px;">Baca Lebih Lanjut</button>
+        </a>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aetheria: Soul Codex. Dibuat untuk FESTIKA 2025.</p>
+    <p style="font-size:13px;color:rgba(255,255,255,0.5)">Pelajari lebih lanjut tentang filosofi di balik numerologi di <a href="info.html" style="color:var(--accent1)">Soul Codex</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
